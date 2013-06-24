@@ -55,4 +55,24 @@ class NumberTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(null, Number::instance(0)->toRoman());
     }
 
+    public function test40()
+    {
+        $this->assertEquals('XL', Number::instance(40)->toRoman());
+    }
+
+    public function test50()
+    {
+        $this->assertEquals('L', Number::instance(50)->toRoman());
+    }
+
+    public function test400()
+    {
+        $this->assertEquals('CD', Number::instance(400)->toRoman());
+    }
+
+    public function test500()
+    {
+        $this->assertEquals('D', Number::instance(500)->toRoman());
+    }
+
 }
